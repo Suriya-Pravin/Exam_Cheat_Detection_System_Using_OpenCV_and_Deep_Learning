@@ -1,59 +1,118 @@
-## Title of the Project
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+## 🧠 Exam Cheat Detection System Using OpenCV and Deep Learning
+### Small Description
 
-## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
+The AI-Based Intelligent Exam Proctoring and Cheating Detection System is designed to monitor students during examinations using computer vision techniques. The system analyzes real-time webcam footage to detect suspicious behaviors such as frequent looking around or leaning movements and automatically logs evidence to ensure exam integrity.
 
-## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
+## 📘 About
 
-## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
+The AI-Based Intelligent Exam Proctoring System leverages computer vision and deep learning to automate the invigilation process during online or computer-based examinations. Traditional exam monitoring methods rely heavily on human supervisors, which can be inefficient, error-prone, and difficult to scale.
 
-## System Architecture
-<!--Embed the system architecture diagram as shown below-->
+This project uses a real-time object detection model to identify students and analyze their behavioral patterns over time. Suspicious actions sustained beyond a predefined duration are flagged as potential cheating incidents. The system records visual evidence and maintains logs for further review, thereby enhancing fairness and transparency in examinations.
 
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+## ✨ Features
 
+Real-time student detection using deep learning.
 
-## Output
+Temporal behavior analysis to reduce false positives.
 
-<!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+Color-coded visual alerts for easy monitoring.
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
+Automatic cheating evidence capture (image-based).
 
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+Timestamped CSV log generation.
 
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
+Modular and scalable system design.
 
+Configurable thresholds for different exam environments.
 
-## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+Works with standard webcams.
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+## 🛠️ Requirements
+Software Requirements
 
-## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+Operating System: Windows 10 / Ubuntu (64-bit)
 
+Programming Language: Python 3.8 or later
 
+IDE / Environment: Jupyter Notebook, VS Code
 
+Libraries & Frameworks
 
+Ultralytics YOLOv8 – real-time object detection
+
+OpenCV – image processing and video handling
+
+NumPy – numerical computations
+
+CSV / OS Modules – logging and file handling
+
+Hardware Requirements
+
+Webcam (minimum 720p recommended)
+
+Minimum 8 GB RAM for smooth execution
+
+## 🧩 System Architecture
+
+The system follows a modular pipeline where each component performs a specific role:
+
+Architecture Flow:
+
+Webcam Input
+   ↓
+YOLOv8 Person Detection
+   ↓
+Behavior Classification
+   ↓
+Temporal Analysis
+   ↓
+Cheating Decision Engine
+   ↓
+Evidence Logging & Alerts
+
+## 🖥️ Output
+### Output 1 – Normal Student Detection
+
+Student detected with cyan bounding box
+
+Status displayed as Normal
+
+### Output 2 – Cheating Detection Alert
+
+Sustained suspicious behavior detected
+
+Bounding box turns red
+
+Evidence image saved automatically
+
+Note: Detection accuracy depends on camera angle, lighting conditions, and threshold configuration.
+
+## 📊 Results and Impact
+
+The proposed system successfully identifies examinees and monitors their behavior in real time. By incorporating temporal analysis, the system significantly reduces false cheating alerts caused by momentary movements. Automated evidence logging ensures transparency and provides reliable records for post-exam review.
+
+This project demonstrates how AI-based monitoring systems can enhance examination integrity while reducing dependence on manual invigilation.
+
+## 🚀 Future Enhancements
+
+Face recognition for identity verification
+
+Eye-gaze tracking for improved behavior analysis
+
+Mobile phone and object detection
+
+Multi-student tracking with unique IDs
+
+Web-based dashboard for examiners
+
+Cloud-based storage for logs and evidence
+
+## 📚 Articles Published / References
+
+J. Redmon et al., “You Only Look Once: Unified, Real-Time Object Detection,” CVPR, 2016.
+
+Ultralytics, “YOLOv8 Documentation,” 2023.
+
+Szeliski, R., Computer Vision: Algorithms and Applications, Springer.
+
+OpenCV Documentation – https://opencv.org
